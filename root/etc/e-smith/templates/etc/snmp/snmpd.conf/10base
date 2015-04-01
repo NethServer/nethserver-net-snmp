@@ -1,0 +1,6 @@
+#
+# 10base
+#
+syslocation     {{$snmpd{SysLocation} || 'Unknown'}}
+syscontact      {{$snmpd{SysContact} || 'Root <root@localhost>'}}
+dontLogTCPWrappersConnects yes

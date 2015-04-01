@@ -1,0 +1,4 @@
+#
+# 20community
+#
+com2sec readonly    default    {{$snmpd{Community} || "public"}}
