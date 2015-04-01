@@ -1,7 +1,7 @@
 Summary: NethServer net-snmp service
 Name: nethserver-net-snmp
-Version: @@VERSION@@
-Release: @@RELEASE@@
+Version: 0.0.1
+Release: 1%{?dist}
 License: GPL
 Source: %{name}-%{version}.tar.gz
 
