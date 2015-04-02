@@ -29,6 +29,10 @@ event_actions('nethserver-net-snmp-update', qw(
 ));
 
 event_services('nethserver-net-snmp-update', qw(
-               net-snmp restart
+               snmpd restart
+));
+
+event_templates('nethserver-net-snmp-update', qw(
+    /etc/snmp/snmpd.conf
 ));
 
