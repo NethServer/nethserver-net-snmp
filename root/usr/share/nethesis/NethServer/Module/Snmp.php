@@ -46,7 +46,7 @@ class Snmp extends \Nethgui\Controller\AbstractController
 
     protected function onParametersSaved($changedParameters)
     {
-        $this->getPlatform()->signalEvent('nethserver-net-snmp-update');
+        $this->getPlatform()->signalEvent('nethserver-net-snmp-save');
     }
 
 }

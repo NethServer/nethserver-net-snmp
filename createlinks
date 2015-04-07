@@ -23,16 +23,34 @@ use esmith::Build::CreateLinks  qw(:all);
 #
 # nethserver-net-snmp-update event
 #
+my $event = "nethserver-net-snmp-update";
 
-event_actions('nethserver-net-snmp-update', qw(
+event_actions($event, qw(
               initialize-default-databases   00
 ));
 
-event_services('nethserver-net-snmp-update', qw(
+event_services($event, qw(
                snmpd restart
 ));
 
-event_templates('nethserver-net-snmp-update', qw(
+event_templates($event, qw(
+    /etc/snmp/snmpd.conf
+));
+
+#
+# nethserver-net-snmp-save event
+#
+$event = "nethserver-net-snmp-save";
+
+event_actions($event, qw(
+              firewall-adjust   20
+));
+
+event_services($event, qw(
+               snmpd restart
+));
+
+event_templates($event, qw(
     /etc/snmp/snmpd.conf
 ));
 
