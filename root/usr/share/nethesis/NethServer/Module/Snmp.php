@@ -32,7 +32,7 @@ class Snmp extends \Nethgui\Controller\AbstractController
 
     protected function initializeAttributes(\Nethgui\Module\ModuleAttributesInterface $base)
     {
-        return \Nethgui\Module\SimpleModuleAttributesProvider::extendModuleAttributes($base, 'Administration');
+        return \Nethgui\Module\SimpleModuleAttributesProvider::extendModuleAttributes($base, 'Configuration');
     }
 
     public function initialize()
