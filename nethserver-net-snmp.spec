@@ -1,6 +1,6 @@
 Summary: NethServer net-snmp service
 Name: nethserver-net-snmp
-Version: 0.0.1
+Version: 1.0.0
 Release: 1%{?dist}
 License: GPL
 Source: %{name}-%{version}.tar.gz
@@ -41,3 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 
 %changelog
+* Thu Apr 09 2015 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 1.0.0-1
+- SNMP support - Feature #2945 [NethServer]
+
